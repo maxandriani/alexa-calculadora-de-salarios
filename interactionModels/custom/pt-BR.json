@@ -1,0 +1,412 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "calculadora de salário",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "CalcularSalarioBruto",
+          "slots": [
+            {
+              "name": "salarioLiquido",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{salarioLiquido}"
+              ]
+            },
+            {
+              "name": "dependentes",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{dependentes}",
+                "{dependentes} dependentes"
+              ]
+            },
+            {
+              "name": "descontos",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{descontos}",
+                "{descontos} descontos"
+              ]
+            }
+          ],
+          "samples": [
+            "quero saber meu salario bruto com base em {salarioLiquido} sem dependentes em com {descontos} descontos",
+            "quero saber meu salario bruto com base em {salarioLiquido} com {dependentes} dependentes",
+            "quero saber meu salario bruto com base em {salarioLiquido} com {descontos} descontos",
+            "quero saber meu salario bruto com base em {salarioLiquido} com {dependentes} dependentes e {descontos} descontos",
+            "quero saber meu salario bruto com base em {salarioLiquido}",
+            "quero saber meu bruto ",
+            "calcule quanto devo negociar",
+            "quanto devo pedir",
+            "calcular meu salário bruto",
+            "calcular salário bruto",
+            "calcular salario bruto de {salarioLiquido}",
+            "calcular salario bruto de {salarioLiquido}  com {dependentes} dependentes e {descontos} descontos",
+            "calcular salario bruto de {salarioLiquido}  com {descontos} de descontos",
+            "calcular salario bruto de {salarioLiquido}  com {descontos} descontos",
+            "calcular salario bruto de {salarioLiquido}  sem dependentes e com {descontos} de descontos",
+            "calcular salario bruto de {salarioLiquido}  sem dependentes e com {descontos} descontos",
+            "calcule o salario bruto de {salarioLiquido}",
+            "calcule o salário bruto de {salarioLiquido}",
+            "calcule quanto devo pedir",
+            "descobrir salário bruto",
+            "bruto",
+            "meu salario liquido e {salarioLiquido}",
+            "quanto devo negociar",
+            "salario bruto"
+          ]
+        },
+        {
+          "name": "CalcularSalarioLiquido",
+          "slots": [
+            {
+              "name": "salarioBruto",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "vou receber {salarioBruto} reais",
+                "{salarioBruto} reais",
+                "vou receber {salarioBruto}",
+                "{salarioBruto}"
+              ]
+            },
+            {
+              "name": "dependentes",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{dependentes} dependentes",
+                "{dependentes}"
+              ]
+            },
+            {
+              "name": "descontos",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{descontos} de descontos",
+                "{descontos}"
+              ]
+            }
+          ],
+          "samples": [
+            "quero saber meu salario liquido de {salarioBruto} sem dependentes e {descontos} descontos",
+            "quero saber meu salario liquido de {salarioBruto} com {descontos} descontos",
+            "quero saber meu salario liquido de {salarioBruto} com {dependentes} dependentes",
+            "quero saber meu salario liquido de {salarioBruto} com {dependentes} dependentes e {descontos} descontos",
+            "quero saber meu salario liquido de {salarioBruto}",
+            "quero saber meu salario liquido",
+            "calcular meu salário líquido",
+            "calcular salário líquido",
+            "calcular salario liquido de {salarioBruto}",
+            "calcular salário líquido de {salarioBruto}",
+            "calcular salario liquido de {salarioBruto}  com {dependentes} dependentes e {descontos} descontos",
+            "calcular salario liquido de {salarioBruto}  com {descontos} de descontos",
+            "calcular salario liquido de {salarioBruto}  com {descontos} descontos",
+            "calcular salario liquido de {salarioBruto}  sem dependentes e com {descontos} de descontos",
+            "calcular salario liquido de {salarioBruto}  sem dependentes e com {descontos} descontos",
+            "calcule o salario liquido de {salarioBruto}",
+            "calcule o salário líquido de {salarioBruto}",
+            "calcule quanto vou ganhar",
+            "calcule quanto vou receber",
+            "extrair salario liquido",
+            "extrair salário líquido",
+            "extrair salario liquido de {salarioBruto}  com {dependentes} dependentes e {descontos} descontos",
+            "extrair salario liquido de {salarioBruto}  com {descontos} de descontos",
+            "extrair salario liquido de {salarioBruto}  com {descontos} descontos",
+            "extrair salario liquido de {salarioBruto}  sem dependentes e com {descontos} de descontos",
+            "extrair salario liquido de {salarioBruto}  sem dependentes e com {descontos} descontos",
+            "liquido",
+            "meu salario bruto e {salarioBruto}",
+            "meu salário bruto é {salarioBruto}",
+            "quanto ganharei",
+            "quanto receberei",
+            "quanto vão me pagar",
+            "quanto vou receber",
+            "salario liquido",
+            "salário líquido"
+          ]
+        },
+        {
+          "name": "CalcularSalario",
+          "slots": [],
+          "samples": [
+            "calcule meus descontos",
+            "calcule meu salário",
+            "calcular meus descontos",
+            "calcular meu salário",
+            "calcular descontos",
+            "descobrir salário",
+            "calcular salário"
+          ]
+        },
+        {
+          "name": "MemoriaDeCalculo",
+          "slots": [],
+          "samples": [
+            "explicar salario",
+            "memoria de calculo",
+            "memoria"
+          ]
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "CalcularSalarioLiquido",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.1035472187694"
+          },
+          "slots": [
+            {
+              "name": "salarioBruto",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1035472187694.796486500355"
+              }
+            },
+            {
+              "name": "dependentes",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1035472187694.925430910702"
+              }
+            },
+            {
+              "name": "descontos",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1035472187694.514127936750"
+              }
+            }
+          ]
+        },
+        {
+          "name": "CalcularSalarioBruto",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.831112718805"
+          },
+          "slots": [
+            {
+              "name": "salarioLiquido",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": true,
+              "prompts": {
+                "confirmation": "Confirm.Slot.563990929024.1125614520743",
+                "elicitation": "Elicit.Slot.563990929024.1125614520743"
+              }
+            },
+            {
+              "name": "dependentes",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.831112718805.272157997767"
+              }
+            },
+            {
+              "name": "descontos",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.831112718805.102128789902"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Confirm.Intent.1035472187694",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Vamos extrair o salário líquido de {salarioBruto} , sem dependentes e {descontos} descontos. Correto?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Vamos extrair o salário líquido de {salarioBruto} , sem dependentes e sem descontos. Correto?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Vamos extrair o salário líquido de {salarioBruto} , com {dependentes} e sem descontos. Correto?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Vamos extrair o salário líquido de {salarioBruto} , com {dependentes} dependentes e {descontos} descontos. Correto?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1035472187694.796486500355",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Qual salário você negociou?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Qual o salário que foi prometido?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Informe seu salário bruto."
+          },
+          {
+            "type": "PlainText",
+            "value": "Qual o seu salário bruto?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1035472187694.925430910702",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Possui dependentes, diga o número"
+          },
+          {
+            "type": "PlainText",
+            "value": "Qual o número de dependentes?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Possui quantos dependentes?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Quantos dependentes?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1035472187694.514127936750",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Possui outros descontos em folha, qual o valor?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Você possui outros descontos em folha, qual o valor?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Você tem outros descontos em folha, como plano de saúde, qual o valor?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.831112718805",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Vamos descobrir o salário bruto com base em {salarioLiquido} , sem dependentes e sem descontos. Correto?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Vamos descobrir o salário bruto com base em {salarioLiquido} , com {dependentes} dependentes e {descontos} descontos. Correto?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Vamos descobrir o salário bruto com base em {salarioLiquido} , com {dependentes} e sem descontos. Correto?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Vamos descobrir o salário bruto com base em {salarioLiquido} , sem dependentes e {descontos} descontos. Correto?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.831112718805.272157997767",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Quantos dependentes?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Possui quantos dependentes?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Qual o número de dependentes?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Possui dependentes, diga o número"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.831112718805.102128789902",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Você tem outros descontos em folha, como plano de saúde, qual o valor?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Você possui outros descontos em folha, qual o valor?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Possui outros descontos em folha, qual o valor?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.563990929024.1125614520743",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Qual valor que você quer que sobre, após os descontos legais?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Qual valor você deseja que caia na sua conta todo mês?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.563990929024.1125614520743",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Vamos calcular o salário bruto com base em {salarioLiquido} . Isso mesmo?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "22"
+}

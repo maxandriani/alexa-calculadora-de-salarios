@@ -1,0 +1,22 @@
+{
+  "name": "calculadora-de-salario",
+  "version": "0.1.9",
+  "description": "Calcule o salário que vai pingar na sua conta! Ou então o valor que vc precisa negociar com seu chefe :)",
+  "main": "index.js",
+  "scripts": {
+    "clean": "npx rimraf ./dist ./tsconfig.tsbuildinfo",
+    "postinstall": "npm run clean && npm run build",
+    "build": "npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amazon Alexa",
+  "license": "ISC",
+  "dependencies": {
+    "ask-sdk-core": "^2.6.0",
+    "ask-sdk-model": "^1.18.0",
+    "aws-sdk": "^2.326.0",
+    "typescript": "^4.1.2",
+    "rimraf": "^3.0.0"
+  },
+  "devDependencies": {}
+}
